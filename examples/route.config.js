@@ -7,7 +7,7 @@ const registerRoute = (navConfig) => {
     let navs = navConfig[lang];
     route.push({
       path: `/${ lang }/component`,
-      redirect: `/${ lang }/component/installation`,
+      redirect: `/${ lang }/component/lancai`,
       component: require(`./pages/${ lang }/component.vue`),
       children: []
     });

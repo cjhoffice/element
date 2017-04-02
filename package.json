@@ -9,6 +9,7 @@
     "packages"
   ],
   "scripts": {
+    "lancai": "npm run dist:all && gh-pages -d examples/element-ui",
     "bootstrap": "yarn || npm i",
     "build:file": "node build/bin/iconInit.js & node build/bin/build-entry.js & node build/bin/i18n.js & node build/bin/version.js",
     "build:theme": "node build/bin/gen-cssfile && gulp build --gulpfile packages/theme-default/gulpfile.js && cp-cli packages/theme-default/lib lib/theme-default",
@@ -104,7 +105,7 @@
     "mocha": "^3.1.1",
     "phantomjs-prebuilt": "^2.1.13",
     "postcss": "^5.1.2",
-    "postcss-loader": "^0.11.1",
+    "postcss-loader": "^1.0.0",
     "postcss-salad": "^1.0.8",
     "rimraf": "^2.5.4",
     "sinon": "^1.17.6",

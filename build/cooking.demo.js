@@ -41,7 +41,8 @@ cooking.set({
   } : false,
   extractCSS: true,
   alias: config.alias,
-  extends: ['vue2', 'lint'],
+  //extends: ['vue2', 'lint'],//lint代码风格静态验证过于严苛不适用屏蔽掉.
+  extends: ['vue2'],
   postcss: config.postcss
 });
 
